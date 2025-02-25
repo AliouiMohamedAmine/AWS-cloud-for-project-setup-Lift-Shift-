@@ -1,25 +1,39 @@
-# AWS Lift & Shift Project
+![AWS-Lift&Shift-project.png](AWS-Lift&Shift-project.png)
 
-## Overview
-This project demonstrates how to lift and shift a multi-tier application (VProfile) to AWS using EC2 instances, Elastic Load Balancer, Auto Scaling, Route 53, and other AWS services.
+# Security Group and Key Pair
+### Security Group
+![security-group](security-group.PNG)
+### Key Pair
+![key-pair](key-pair.PNG)
 
-## Architecture
-![AWS Architecture](screenshots/aws-architecture.png)
+# Instances
+![instances](instances.PNG)
+### Mariadb
+![mariadb](mariadb.PNG)
+### Memcache
+![memcache](memcache.PNG)
+### RabbitMQ
+![rabbitmq](rabbitmq.PNG)
+### Tomcat 9
+![tomcat](tomcat9.PNG)
 
-## Steps to Set Up
-1. **Provision EC2 Instances**:
-   - Use the provided scripts to set up Tomcat, MySQL, RabbitMQ, and Memcached.
-2. **Configure Elastic Load Balancer**:
-   - Create an Application Load Balancer to route traffic to Tomcat instances.
-3. **Set Up Route 53**:
-   - Configure DNS for your application.
-4. **Upload Artifacts to S3**:
-   - Store your application artifacts in an S3 bucket.
-5. **Deploy the Application**:
-   - Download the artifacts from S3 and deploy them to the Tomcat instances.
+# Build and Deploy Artifacts
+### Bucket
+![bucket](bucket.PNG)
+### Host Zone
+![host-zone](hostzone.PNG)
 
-## Project Structure
-aws-lift-and-shift/
-├── scripts/
-├── screenshots/
-├── README.md
+# Load Balancer
+### Target Group
+![target-group](targetgroup.PNG)
+### Load Balancer
+![load-balancer](loadbalancer.PNG)
+
+# Autoscaling Group
+### Image
+![image](image.PNG)
+### Launch Template
+![launch-template](launchtemplate.PNG)
+### Auto Scaling Group
+![scaling-group](autoscalling.PNG)
+
